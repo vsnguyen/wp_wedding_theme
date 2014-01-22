@@ -1,0 +1,11 @@
+body {
+  background: transparent; }
+
+#hero {
+  height: 60%;
+  background: #999999; }
+
+.border-radius-none {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0; }
