@@ -8,7 +8,7 @@ $(function(){
     var id = $(this).attr('href');
 
     $("html,body").animate({
-      scrollTop: id == "#header" ? 0 : $(id).offset().top
+      scrollTop: id == "#header" ? 0 : $(id).offset().top - 61
     }, 'slow');
 
     return false;
