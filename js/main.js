@@ -4,14 +4,15 @@ $(function(){
   $window = $(window);
 
   // nav return false
-  $('.main-nav a').click(function(){
+  $('.main-nav a').click(function(e){
     var id = $(this).attr('href');
+    var navHeight = $('#header').outerHeight();
 
     $("html,body").animate({
-      scrollTop: id == "#header" ? 0 : $(id).offset().top - 61
-    }, 'slow');
+      scrollTop: id == "#header" ? 0 : $(id).offset().top - navHeight
+    }, 1500, 'easeInOutExpo');
 
-    return false;
+    e.preventDefault();
   })
   
   // google maps
